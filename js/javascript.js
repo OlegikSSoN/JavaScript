@@ -1,20 +1,38 @@
 console.log("Hello World");
 
-const age = prompt("Вік");
-const name = prompt("Ім'я");
+//const age = Number(prompt("Вік"));
+//const name = prompt("Ім'я");
 
-if (name == 'Vlad') {
-    console.log("Hello Vlad")
-} else {
-    console.log("You is no Vlad")
-}
+//if (age < 18) {
+//    console.log("Hello Vlad")
+//} else {
+//    console.log("You is no Vlad")
+//}
 
-if (age == 18) {
-    console.log("Hello Vlad")
-} else {
-    console.log("You is no Vlad")
+//if (name == 'Vlad') {
+//    console.log("Hello Vlad")
+//} else {
+//    console.log("You is no Vlad")
+//}
+
+const age = 10;
+
+const arr = [1, 2, 3];
+
+console.log(arr)
+arr.push(4);
+console.log(arr)
+arr.shift();
+console.log(arr)
+arr.unshift(5);
+console.log(arr)
+arr.pop();
+console.log(arr)
+
+for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    console.log(`Index - $(index), value = $(element)`)
 }
-    
 
 //alert('Задумане число');
 //alert('на 2');
