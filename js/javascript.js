@@ -1,11 +1,81 @@
-//вивести кожен елемент
-const arr = ['oleh1', 'oleh2', 'oleh3', 'oleh4', 'oleh5', 'oleh6'];
+const wrapperBlocks = document.createElement('button');
+let btn = document.createElement('button');
+btn.setAttribute('class', 'btn');
+btn.textContent = 'test value';
+wrapperBlocks.appendChild
 
-let index = 0;
-while (index < arr.length) {
-    console.log(arr[index]);
-    index++;
-}
+
+
+
+
+
+
+
+
+//вивести кожен елемент
+//const arr = ['Oleh1', 'Oleh2', 'Oleh3', 'Oleh4', 'Oleh5', 'Oleh6'];
+
+//for (let i = 0; i < arr.length; i++) {
+//    console.log(arr[i]);
+//    if (arr[i] == 'Oleh4') {
+//        console.log(`Елемент присутній на ${i + 1} позиції`);
+//        break;
+//    }
+//}
+
+//for (const [index, value] of arr.entries()) {  
+//    console.log(value, index);
+//    if (arr[index] == 'Oleh4') {
+//        console.log(`Елемент присутній на ${index + 1} позиції`);
+//        break;
+//    }  
+//}
+
+//for (const element of arr) {
+//    console.log(element)
+//}
+
+//arr.forEach((element, index) => {
+//    console.log(element, index)
+//});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//let index = 0;
+//while (index < arr.length) {
+//    console.log(arr[index]);
+//    index++;
+//}
+
+//for (let i = 0; i < arr.length; i++) {
+//    console.log(arr[i]);
+//}
 
 
 //редактор елементів через яву

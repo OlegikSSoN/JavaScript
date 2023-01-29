@@ -1,0 +1,17 @@
+.block-wrapper {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 10px;
+ flex-wrap: wrap;
+}
+
+.perent-block {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
