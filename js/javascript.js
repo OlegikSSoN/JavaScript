@@ -1,8 +1,28 @@
-const wrapperBlocks = document.createElement('button');
-let btn = document.createElement('button');
-btn.setAttribute('class', 'btn');
-btn.textContent = 'test value';
-wrapperBlocks.appendChild
+let firstNumber = Number(prompt("First Number:"));
+
+if (firstNumber) {
+    const secondNumber = Number(prompt("Second Number:"));
+    if (firstNumber && secondNumber && secondNumber > firstNumber) {
+        const arr = []
+        for (let i = firstNumber; i <= secondNumber; i++) {
+            if(i % 2 != 0) {
+            arr.push(i);
+        }
+    }
+    console.log(arr)
+
+    let multiplay = 1;
+        for (const interator of arr) {
+            multiplay = multiplay * interator;
+        }
+
+        console.log(multiplay);
+    } else {
+      alert("Leave from here!!!");
+} 
+} else {
+    alert("Leave from here!!!");
+}
 
 
 
@@ -10,6 +30,138 @@ wrapperBlocks.appendChild
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//const arr = [1, 2, 3]
+//const arr2 = [1, 2, 3, 4, 5, 6]
+
+//if(arr.lengt !== arr2.length) {
+
+//}
+//for (let i = 0; i < arr.lengt; i++) {
+//    console.log(arr[i], arr2[i])
+//    if(arr[i] !== arr2[i]) {
+//    console.log('break')
+//    break;
+//    }
+//}
+
+
+
+// масиви
+//const testArray = [[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10]]];
+
+//for (const innerArray of testArray) {
+//    for (const iterator of innerArray) {
+//        for (const allArray of iterator)
+//        console.log(allArray);
+//    }
+//}
+
+
+
+
+
+
+
+
+//const testArray = [[1, 2], [3, 4], [5, 6]];
+//-
+//for (let ix = 0; i < testArray.length; i++) {
+//    const element = testArray[i];    
+//}
+//-
+//for (let i = 0; i < element.length; i++) {
+//    const element = testArray[i];
+//    console.log(element[i])
+//}
+//-
+//console.log(testArray[0][0]);
+//console.log(testArray[0][1]);
+//console.log(testArray[1][0]);
+//console.log(testArray[1][1]);
+//console.log(testArray[2][0]);
+//console.log(testArray[2][1]);
+
+
+
+
+
+
+
+// достукатись до певного масиву
+//const testArray = [1, 2, 3, 4];
+
+//testArray[1] = 'dsfdsf'
+//console.log(testArray[0])
+//console.log(testArray[1])
+//console.log(testArray[2])
+//console.log(testArray[3])
+
+
+
+//let firstNumber = Number(prompt("First Number:"));
+
+//if (firstNumber) {
+//    const secondNumber = Number(prompt("Second Number:"));
+//    if (firstNumber && secondNumber && secondNumber > firstNumber) {
+//        const arr = []
+//        for (let i = firstNumber; i <= secondNumber; i++) {
+//            arr.push(1);
+//        }
+//        for (let i = 0; i < arr.length; i++) {
+//            if(arr[i] % 2 != 0);
+//            console.log(arr[i]);
+//        }
+//    } else {
+//      alert("Leave from here!!!");
+//} 
+//} else {
+//    alert("Leave from here!!!");
+//}
+
+
+//if (firstNumber) {
+//    firstNumber++;
+//}
+//for (let i = firstNumber; i <= secondNumber; i += 2) {
+//    console.log(i)
+//}
+//for (let i = firstNumber; i <= secondNumber; i++) {
+//    if (i % 2 == 0) {
+//        console.log(i)
+//    }
+//}
+
+
+//const wrapperBlocks = document.createElement('button');
+//let btn = document.createElement('button');
+//btn.setAttribute('class', 'btn');
+//btn.textContent = 'test value';
+//wrapperBlocks.appendChild
 
 
 //вивести кожен елемент
@@ -38,33 +190,6 @@ wrapperBlocks.appendChild
 //arr.forEach((element, index) => {
 //    console.log(element, index)
 //});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //let index = 0;
@@ -134,33 +259,6 @@ wrapperBlocks.appendChild
 //} else {
 //    console.log("")
 //}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //let i = 0, i1 = 1, i2 = 3;
