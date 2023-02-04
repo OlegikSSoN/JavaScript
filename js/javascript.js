@@ -1,3 +1,4 @@
+// додає
 let firstNumber = Number(prompt("First Number:"));
 
 if (firstNumber) {
@@ -11,9 +12,9 @@ if (firstNumber) {
     }
     console.log(arr)
 
-    let multiplay = 1;
+    let multiplay = 0;
         for (const interator of arr) {
-            multiplay = multiplay * interator;
+            multiplay = multiplay + interator;
         }
 
         console.log(multiplay);
@@ -33,22 +34,32 @@ if (firstNumber) {
 
 
 
+//множить
+//let firstNumber = Number(prompt("First Number:"));
 
+//if (firstNumber) {
+//    const secondNumber = Number(prompt("Second Number:"));
+//    if (firstNumber && secondNumber && secondNumber > firstNumber) {
+//        const arr = []
+//        for (let i = firstNumber; i <= secondNumber; i++) {
+//            if(i % 2 != 0) {
+//            arr.push(i);
+//        }
+//    }
+//    console.log(arr)
 
+//    let multiplay = 1;
+//        for (const interator of arr) {
+//            multiplay = multiplay * interator;
+//        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+//        console.log(multiplay);
+//    } else {
+//      alert("Leave from here!!!");
+//} 
+//} else {
+//    alert("Leave from here!!!");
+//}
 
 
 
