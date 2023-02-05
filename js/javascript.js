@@ -1,36 +1,204 @@
-// додає
-let firstNumber = Number(prompt("First Number:"));
+// функції
 
-if (firstNumber) {
-    const secondNumber = Number(prompt("Second Number:"));
-    if (firstNumber && secondNumber && secondNumber > firstNumber) {
-        const arr = []
-        for (let i = firstNumber; i <= secondNumber; i++) {
-            if(i % 2 != 0) {
-            arr.push(i);
-        }
-    }
-    console.log(arr)
 
-    let multiplay = 0;
-        for (const interator of arr) {
-            multiplay = multiplay + interator;
-        }
-
-        console.log(multiplay);
+// множити число на 4
+function factorial(x) {
+    if(x < 0) {
+    console.log('< 0')
+    return
+}
+    if (x == 0 || x == 1) {
+        return 1;
     } else {
-      alert("Leave from here!!!");
-} 
-} else {
-    alert("Leave from here!!!");
+        return x * factorial(x - 1);
+    }
 }
 
+console.log(factorial(5));
 
 
 
 
 
 
+
+
+
+
+//число до степеня
+//function pow(x, n) {
+//    let result = 1;
+//    for (let i = 0; i < n; i++) {
+//    result = result * x
+//    }
+//    return result;
+//}
+
+//function powRecursive(x, n) {
+//    if (n == 1) {
+//        return x;
+//    } else {
+//        return x * powRecursive(x, n - 1);
+//    }
+//}
+
+//console.log(pow(2, 3));
+//console.log(powRecursive(2, 3));
+
+
+
+
+// шукає мінімальний парний
+//function getFromArray(inputArray) {
+//    let minValue = inputArray[0];
+//    for (let i = 1; i < inputArray.length; i++) {
+//        const element = inputArray[i];
+//        if (element < minValue) {
+//            minValue = element;
+//        }
+//    }
+//    return minValue
+//}
+
+//function getEven(inputArray) {
+//    const even = [];
+//    for (const item of inputArray) {
+//        if (item % 2 == 0) {
+//            even.push(item);
+//        }
+//    }
+//    return even;
+//}
+
+//function getMinEven(inputArray) {
+//    const even = getEven(inputArray);
+//    const min = getFromArray(even);
+//    return min;
+//}
+
+//console.log(getMinEven([1, 2, 3, 4]))
+
+
+
+
+
+
+// шукає більше число
+//function max(...params) {
+//    let maxValue = params[0];
+//    for (let i = 1; i < params.length; i++) {
+//        const element = params[i];
+//        if (element > maxValue) {
+//            maxValue = element;
+//        }
+//    }
+//    return maxValue
+//}
+
+//const maxV1 = max(60, 20, 30, 100, 40)
+//const maxV2 = max(60, 20, 30, 100, 40)
+//const maxV3 = max(60, 20, 30, 200, 40)
+//const maxV4 = max(60, 20, 30, 100, 40)
+
+//console.log(max(maxV1, maxV2, maxV3, maxV4))
+
+
+
+
+//const arrayOfNumbers = [1, 2, 3]
+
+//function sumOfArrayValues(imputArray) {
+//    let res = 0;
+
+//    for (const value of imputArray) {
+//        res += value;
+//    }
+//    return res;
+//}
+
+//const sun = sumOfArrayValues(arrayOfNumbers);
+
+//console.log(sum)
+
+
+
+//function mult(...params) {
+//    console.log(params)
+//    let sumOfValue = 0;
+//    for (const item of params) {
+//    sumOfValue += item;
+//    }
+//    return sumOfValue;
+//}
+
+//console.log(mult())
+//console.log(mult(1, 2))
+//console.log(mult(1, 2, 3))
+//console.log(mult(1, 2, 3, 4))
+//console.log(mult(1, 2, 3, 4, 5))
+
+
+
+
+//function sum(x, y) {
+//    return x + y
+//}
+
+//console.log(sum(1, 2, 3))
+
+// розкрити всі параметри
+//function mult(...params) {
+//    console.log(params)
+//}
+
+//console.log(mult())
+//console.log(mult(1, 2))
+//console.log(mult(1, 2, 3))
+//console.log(mult(1, 2, 3, 4))
+//console.log(mult(1, 2, 3, 4, 5))
+
+
+
+
+
+//множ на степінь
+//console.log(Math.pow(10, 3));
+
+//додавання
+//function sum(left, right) {
+//    console.log(left, right)
+//    const sum = left + right
+//    return sum;
+//}
+
+
+
+// додає
+//let firstNumber = Number(prompt("First Number:"));
+
+//if (firstNumber) {
+//    const secondNumber = Number(prompt("Second Number:"));
+//    if (firstNumber && secondNumber && secondNumber > firstNumber) {
+//        const arr = []
+//        for (let i = firstNumber; i <= secondNumber; i++) {
+//            if(i % 2 != 0) {
+//            arr.push(i);
+//        }
+//    }
+//    console.log(arr)
+
+//    let multiplay = 0;
+//        for (const interator of arr) {
+//            multiplay = multiplay + interator;
+//        }
+
+//        console.log(multiplay);
+//    } else {
+//      alert("Leave from here!!!");
+//} 
+//} else {
+//    alert("Leave from here!!!");
+//}
 
 
 
