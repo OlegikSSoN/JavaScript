@@ -1,27 +1,40 @@
 // функції
 
+document.forms.publish.onsubmit = function() {
+    var name = this.name.value;
+    var email = this.email.value;
+    var phone = this.phonenumber.value;
+    console.log(name, email, phone)
+    return false;
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // множити число на 4
-function factorial(x) {
-    if(x < 0) {
-    console.log('< 0')
-    return
-}
-    if (x == 0 || x == 1) {
-        return 1;
-    } else {
-        return x * factorial(x - 1);
-    }
-}
+//function factorial(x) {
+//    if(x < 0) {
+//    console.log('< 0')
+//    return
+//}
+//    if (x == 0 || x == 1) {
+//        return 1;
+//    } else {
+//        return x * factorial(x - 1);
+//    }
+//}
 
-console.log(factorial(5));
-
-
-
-
-
-
-
+//console.log(factorial(5));
 
 
 
