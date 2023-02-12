@@ -8,16 +8,23 @@
 
 document.getElementById('send_btn').addEventListener('click', function(e) {
     e.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    alert('Name: ' + name + ' ' + 'email: ' + email + ' ' + 'Phone: ' + phone);
-    alert(`Name: ${name} Email: ${email} Phone: ${phone}`)
+    const NAME = document.getElementById('name').value;
+    const AGE = document.getElementById('age').value;
+    const EMAIL = document.getElementById('email').value;
+    const PHONE = document.getElementById('phone').value;
+
+    if (AGE < 18 && AGE >=0) {
+        document.querySelector('.cont_text').classList.add("show");
+        document.querySelector('.cont_img').classList.remove("show")
+    } else if (AGE < 0) {
+        alert('Ви ввели неправильний вік');
+    } else {
+        document.querySelector('.cont_img').classList.add("show")
+        document.querySelector('.cont_text').classList.remove("show");
+    }
+
+    // alert(`Ім'я: ${NAME} Вік: ${AGE} E-mail: ${EMAIL} Телефон: ${PHONE}`)
 });
-
-
-
-
 
 
 

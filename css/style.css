@@ -1,0 +1,22 @@
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 5px;
+}
+
+.cont_text {
+    display: none;
+}
+
+.cont_img {
+    display: none;
+}
+
+.cont_img.show {
+    display: block;
+}
+
+.cont_text.show {
+    display: block;
+}
