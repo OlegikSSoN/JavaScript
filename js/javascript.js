@@ -1,13 +1,18 @@
-document.forms.publish.onsubmit = function(e) {
-    var name = this.name.value;
-    var email = this.email.value;
-    var phone = this.phone.value;
-    console.log(name, email, phone);
+// document.forms.publish.onsubmit = function(e) {
+//     var name = this.name.value;
+//     var email = this.email.value;
+//     var phone = this.phone.value;
+//     console.log(name, email, phone);
+//     e.preventDefault();
+//   };
+
+document.getElementById('send_btn').addEventListener('click', function(e) {
     e.preventDefault();
-  };
-
-
-
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    alert('Name: ' + name + ' ' + 'email: ' + email + ' ' + 'Phone: ' + phone);
+});
 
 
 
