@@ -3,14 +3,10 @@
 document.forms.publish.onsubmit = function() {
     var name = this.name.value;
     var email = this.email.value;
-    var phone = this.phonenumber.value;
+    var phone = this.phone.value;
     console.log(name, email, phone)
     return false;
   };
-
-
-
-
 
 
 
