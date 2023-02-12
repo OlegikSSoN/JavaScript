@@ -12,6 +12,7 @@ document.getElementById('send_btn').addEventListener('click', function(e) {
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
     alert('Name: ' + name + ' ' + 'email: ' + email + ' ' + 'Phone: ' + phone);
+    alert(`Name: ${name} Email: ${email} Phone: ${phone}`)
 });
 
 
