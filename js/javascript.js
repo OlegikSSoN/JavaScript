@@ -1,12 +1,19 @@
-// функції
-
-document.forms.publish.onsubmit = function() {
+document.forms.publish.onsubmit = function(e) {
     var name = this.name.value;
     var email = this.email.value;
     var phone = this.phone.value;
-    console.log(name, email, phone)
-    return false;
+    console.log(name, email, phone);
+    e.preventDefault();
   };
+
+
+
+
+
+
+
+
+
 
 
 
