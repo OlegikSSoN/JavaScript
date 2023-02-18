@@ -6,31 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.scss">
     <title>JavaScript</title>
 </head>
 
-<body>
-<div>
-    <form name="publish">
-      <label>Ваше ім'я:</label>
-      <input id="name" type="text" name="name" placeholder="Ім'я"/>
-      <label>Ваш вік:</label>
-      <input id="age" type="text" name="age" placeholder="Вік"/>
-      <label>Ваш e-mail:</label>
-      <input id="email" type="email" name="email" placeholder="e-mail"/>
-      <label>Ваш номер телефону:</label>
-      <input id="phone" type="number" name="phone" placeholder="Номер телефону"/>
-      <button id="send_btn" type="submit">Надіслати</button>
-    </form>
-    <div class="content">
-        <div class="cont_text">
-            <h2>Вік невірний</h2>
+<body onclick="displaySomeText();">
+    <!-- <section class="babysitter">
+        <div class="babysitter__title">Няня на вихідні</div>
+        <div class="babysitter__list">
+            <div class="babysitter__list_card">
+                <img class="card_img" src="img/image 5.png" alt="" />
+                <h4>Наталія</h4>
+                <p class="card_nick">Київ, Україна</p>
+            </div>
+            <div class="babysitter__list_card">
+                <img class="card_img" src="img/image 5.png" alt="" />
+                <h4>Наталія</h4>
+                <p class="card_nick">Київ, Україна</p>
+            </div>
+            <div class="babysitter__list_card">
+                <img class="card_img" src="img/image 5.png" alt="" />
+                <h4>Наталія</h4>
+                <p class="card_nick">Київ, Україна</p>
+            </div>
+            <div class="babysitter__list_card">
+                <img class="card_img" src="img/image 5.png" alt="" />
+                <h4>Наталія</h4>
+                <p class="card_nick">Київ, Україна</p>
+            </div>
+            <div class="babysitter__list_card">
+                <img class="card_img" src="img/image 5.png" alt="" />
+                <h4>Наталія</h4>
+                <p class="card_nick">Київ, Україна</p>
+            </div>
+            <div class="babysitter__list_card">
+                <img class="card_img" src="img/image 5.png" alt="" />
+                <h4>Наталія</h4>
+                <p class="card_nick">Київ, Україна</p>
+            </div>
+            <div class="babysitter__list_card">
+                <img class="card_img" src="img/image 5.png" alt="" />
+                <h4>Наталія</h4>
+                <p class="card_nick">Київ, Україна</p>
+            </div>
+            <div class="babysitter__list_card">
+                <img class="card_img" src="img/image 5.png" alt="" />
+                <h4>Наталія</h4>
+                <p class="card_nick">Київ, Україна</p>
+            </div>
+            <div class="babysitter__list_card">
+                <img class="card_img" src="img/image 5.png" alt="" />
+                <h4>Наталія</h4>
+                <p class="card_nick">Київ, Україна</p>
+            </div>
+            <div class="babysitter__list_card">
+                <img class="card_img" src="img/image 5.png" alt="" />
+                <h4>Наталія</h4>
+                <p class="card_nick">Київ, Україна</p>
+            </div>
+            <div class="babysitter__list_card">
+                <img class="card_img" src="img/image 5.png" alt="" />
+                <h4>Наталія</h4>
+                <p class="card_nick">Київ, Україна</p>
+            </div>
+            <div class="babysitter__list_card">
+                <img class="card_img" src="img/image 5.png" alt="" />
+                <h4>Наталія</h4>
+                <p class="card_nick">Київ, Україна</p>
+            </div>
         </div>
-        <div class="cont_img">
-            <img src="img/Без названия.jfif">
         </div>
-    </div>
-  </div>
+        </div>
+    </section> -->
+
+    <!-- <button onclick="displaySomeText();">Test</button> -->
+
+    <button onclick="displaySomeText();">Test</button>
+    <button onclick="showSortedbyAge();" class="btn btn-warning">Sort</button>
+    <button onclick="filterByAge();" class="btn btn-danger">Les 30</button>
+    <button onclick="filterByName();" class="btn btn-name">Names</button>
+    <div class="parentItem"></div>
 
     <script src="./js/javascript.js"></script>
 </body>

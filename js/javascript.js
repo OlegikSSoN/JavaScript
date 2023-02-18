@@ -1,3 +1,155 @@
+const BABYSITTER_CARDS = [
+    {
+        id: 1,
+        name: 'Bohn',
+        age: 20,
+        img: 'img/image5.png',
+        location: 'New York',
+    },
+    {
+        id: 2,
+        name: 'Lohn',
+        age: 25,
+        img: 'img/image5.png',
+        location: 'New York',
+    },
+    {
+        id: 3,
+        name: 'Aohn',
+        age: 30,
+        img: 'img/image5.png',
+        location: 'New York',
+    },
+    {
+        id: 4,
+        name: 'Tohn',
+        age: 35,
+        img: 'img/image6.png',
+        location: 'New York',
+    }
+]
+
+// 1. filter by age
+function filterByAge(age) {
+    const FILTERED_CARDS = BABYSITTER_CARDS.filter((card) => {
+      return card.age < age;
+    });
+    renderElementsOnPage(FILTERED_CARDS);
+  }
+  
+  // 2. Render the elements on the page
+  function renderElementsOnPage(cards){
+    let html = '';
+    // 1. Forming the HTML
+    cards.forEach((post) => {
+      html += `
+        <div>${post.age}</div>
+        <img src="${post.img}" alt="${post.name}">
+      `
+    })
+    // 2. Inserting the HTML
+    const TARGET = document.querySelector('.parentItem');
+    TARGET.innerHTML = html;
+  }
+  
+  // 3. Sorting the data by age
+  function showSortedbyAge() {
+    // 1. Sorting the data by age
+    const SORTED_DATA = BABYSITTER_CARDS.sort((a, b) => {
+      return b.age - a.age;
+    })
+    // 2. showing the data on the page
+    renderElementsOnPage(SORTED_DATA);
+  }
+  
+  // 4. Hiding all elements on the page
+  function hideAllElements(){
+    // 1. Hiding all elements
+    const TARGET = document.querySelector('.parentItem');
+    TARGET.innerHTML = '';
+  }
+  
+  // 5. Showing all elements on the page when the page loads
+  document.addEventListener('DOMContentLoaded', () => {
+    renderElementsOnPage(BABYSITTER_CARDS);
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const BABYSITTER_CARDS = [
+//     {
+//         id: 1,
+//         name: 'John',
+//         age: 20,
+//         img: 'img/image5.png',
+//         location: 'New York',
+//     },
+//     {
+//         id: 2,
+//         name: 'John',
+//         age: 25,
+//         img: 'img/image5.png',
+//         location: 'New York',
+//     },
+//     {
+//         id: 3,
+//         name: 'John',
+//         age: 30,
+//         img: 'img/image5.png',
+//         location: 'New York',
+//     },
+//     {
+//         id: 4,
+//         name: 'John',
+//         age: 35,
+//         img: 'img/image6.png',
+//         location: 'New York',
+//     }
+// ]
+
+
+
+
+// function displaySomeText() {
+//     let html = '';
+//     BABYSITTER_CARDS.forEach((post) => {
+//        html += `
+//        <img src="${post.img}" alt="${post.img}">
+//        <h4>${post.name}</h4>
+//        <p>${post.age}</p>
+//        `
+//     })
+//     const TARGET = document.querySelector('.parentItem');
+//     TARGET.innerHTML = html;
+// }
+
+
+
+// function hideAllElements() {
+//      const TARGET = document.querySelector('.parentItem');
+//      TARGET.innerHTML = '';
+// }
+
+
+
+
+
+
+
+
+
+
+
 // document.forms.publish.onsubmit = function(e) {
 //     var name = this.name.value;
 //     var email = this.email.value;
@@ -6,25 +158,31 @@
 //     e.preventDefault();
 //   };
 
-document.getElementById('send_btn').addEventListener('click', function(e) {
-    e.preventDefault();
-    const NAME = document.getElementById('name').value;
-    const AGE = document.getElementById('age').value;
-    const EMAIL = document.getElementById('email').value;
-    const PHONE = document.getElementById('phone').value;
 
-    if (AGE < 18 && AGE >=0) {
-        document.querySelector('.cont_text').classList.add("show");
-        document.querySelector('.cont_img').classList.remove("show")
-    } else if (AGE < 0) {
-        alert('Ви ввели неправильний вік');
-    } else {
-        document.querySelector('.cont_img').classList.add("show")
-        document.querySelector('.cont_text').classList.remove("show");
-    }
 
-    // alert(`Ім'я: ${NAME} Вік: ${AGE} E-mail: ${EMAIL} Телефон: ${PHONE}`)
-});
+
+
+
+
+// document.getElementById('send_btn').addEventListener('click', function(e) {
+//     e.preventDefault();
+//     const NAME = document.getElementById('name').value;
+//     const AGE = document.getElementById('age').value;
+//     const EMAIL = document.getElementById('email').value;
+//     const PHONE = document.getElementById('phone').value;
+
+//     if (AGE < 18 && AGE >=0) {
+//         document.querySelector('.cont_text').classList.add("show");
+//         document.querySelector('.cont_img').classList.remove("show")
+//     } else if (AGE < 0) {
+//         alert('Ви ввели неправильний вік');
+//     } else {
+//         document.querySelector('.cont_img').classList.add("show")
+//         document.querySelector('.cont_text').classList.remove("show");
+//     }
+
+//     // alert(`Ім'я: ${NAME} Вік: ${AGE} E-mail: ${EMAIL} Телефон: ${PHONE}`)
+// });
 
 
 

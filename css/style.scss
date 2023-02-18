@@ -1,0 +1,22 @@
+.babysitter {
+    &__title {
+        h4 {
+            font-size: 22px;
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    &__list_card {
+        p {
+            font-size: 15px;
+        }
+        &_card_img {
+            
+        }
+    }
+}

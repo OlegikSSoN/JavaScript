@@ -1,22 +1,12 @@
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    gap: 5px;
+.babysitter__title h4 {
+  font-size: 22px;
 }
-
-.cont_text {
-    display: none;
+.babysitter__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
 }
-
-.cont_img {
-    display: none;
-}
-
-.cont_img.show {
-    display: block;
-}
-
-.cont_text.show {
-    display: block;
-}
+.babysitter__list_card p {
+  font-size: 15px;
+}/*# sourceMappingURL=style.css.map */
